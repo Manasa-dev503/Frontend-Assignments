@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //remove duplicates in a string
+     var str = "hello"
+        var st = ""
+        for(var i=0;i<=str.length-1;i++){
+            var flag = 0
+            for(var j=i+1;j<str.length;j++){
+                if(str[i]===str[j]){
+                    flag = 1
+                    break;
+                }
+
+            }
+            if(flag==0){
+                st = st+str[i]
+            }
+
+        }
+        console.log(st)
+
+
+        var x = "hello"
+        var y = ""
+        for(var i=0;i<=x.length-1;i++){
+            if(i==x.indexOf(x[i])){
+                y = y+x[i]
+
+            }
+        }
+        console.log(y)
+
+      
+        var str = "hello"
+        var st = ""
+        for(var i=0;i<=str.length-1;i++){
+            var flag = 0
+            for(var j=0;j<str.length;j++){
+                if(str[i]===str[j] && i!=j){
+                    flag = 1
+                    break;
+                }
+
+            }
+            if(flag==0){
+                st = st+str[i]
+            }
+
+        }
+        console.log(st)
+
+      
+    </script>
+</body>
+</html>

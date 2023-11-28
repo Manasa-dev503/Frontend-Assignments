@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str = "Hello"
+        var ar = []
+        var length = str.length
+        var str1 = str.slice(0,Math.ceil(length/2))
+        console.log(str1)
+        var str2 = str.slice(Math.round(length/2),length)
+        console.log(str2)
+        ar.push(str1,str2)
+        console.log(ar)
+
+
+        var ar1 = ["apple","banana","orange"]
+        var ar2 = []
+        for(var i=0;i<=ar1.length-1;i++){
+            var length = ar1[i].length
+            var str3 = ar1[i].slice(0,Math.ceil(length/2))
+            var str4 = ar1[i].slice(Math.round(length/2),length)
+            ar2.push(str3,str4)
+        }
+        console.log(ar2)
+    </script>
+</body>
+</html>
