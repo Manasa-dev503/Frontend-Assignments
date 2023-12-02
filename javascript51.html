@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="d1">
+    <input type="text" id="d2">
+    <button onclick="abc()">Add</button>
+    <script>
+        var ar = []
+        
+        function abc(){
+            var x = document.getElementById("d1").value
+            var y = document.getElementById("d2").value
+            if(x==="" && y===""){
+                ar.push(0,0)
+                console.log(ar)
+            }
+            else if(x===""){
+                ar.push(0,parseInt(y))
+                console.log(ar)
+
+            }
+            else if(y===""){
+                ar.push(parseInt(x),0)
+                console.log(ar)
+            }
+            else{
+                ar.push(parseInt(x),parseInt(y))
+                console.log(ar)
+            }
+        }
+        
+        
+
+    </script>
+</body>
+</html>

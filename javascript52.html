@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var ar = [5,3,4,8,2]
+       // console.log(ar.length)
+
+        count = 0
+        for(var i=0;i<=ar.length-1;i++){
+            count+=1
+        }
+        console.log(count)
+
+
+        var br = [9,8,3,2,5,8,10]
+        br.sort(function(a,b){
+            if(a<b){
+                return a-b
+            }
+        })
+        console.log(br)
+
+
+        var cr = ["hi","cat","gir","apple","icecream"]
+        cr.sort()
+        console.log(cr)
+    </script>
+</body>
+</html>

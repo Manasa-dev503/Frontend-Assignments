@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //cerate a function that receives an array of numbers as argument and returns an array containing only the positive numbers
+        function abc(ar){
+            var ar1 = []
+            for(var i=0;i<=ar.length-1;i++){
+                if(ar[i]>0){
+                    ar1.push(ar[i])
+                }
+            }
+            return ar1
+
+        }
+        var x = abc([-1,2,3,-4,5])
+        console.log(x)
+    </script>
+</body>
+</html>

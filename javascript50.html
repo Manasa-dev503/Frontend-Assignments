@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        function abc(ar){
+            var p = ar.filter(function(v){
+                if(v%3===0){
+                    return true
+                }
+            })
+            return p
+
+        }
+        var x = abc([3,13,24,34,9,18,2])
+        console.log(x)
+    </script>
+</body>
+</html>
